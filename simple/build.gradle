@@ -3,6 +3,8 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
+    namespace 'com.ven.assists.simple'
+    kotlinOptions { jvmTarget = '17' }
     compileSdk rootProject.ext.compileSdk
     defaultConfig {
         applicationId "com.ven.assists.demo"

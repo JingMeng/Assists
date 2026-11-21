@@ -6,7 +6,7 @@ buildscript {
         // SDK 版本
         compileSdk = 34
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         
         // 应用版本
         versionCode = 6
@@ -40,8 +40,8 @@ buildscript {
         glideVersion = "4.15.1"
         
         // Gradle 插件版本
-        gradleVersion = "7.3.0"
-        kotlinGradleVersion = "1.7.10"
+        gradleVersion = "8.2.1"
+        kotlinGradleVersion = "1.9.22"
         dokkaVersion = "1.8.10"
     }
     repositories {
@@ -53,10 +53,8 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.3.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10"
-
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.android.tools.build:gradle:8.2.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22"
 
     }
 }

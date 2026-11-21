@@ -6,9 +6,12 @@ apply plugin: 'org.jetbrains.dokka'
 android {
     namespace 'com.ven.assists.base'
     compileSdk rootProject.ext.compileSdk
+    publishing { singleVariant('release') }
+    kotlinOptions { jvmTarget = '17' }
 
     defaultConfig {
         minSdk rootProject.ext.minSdk
+        targetSdk rootProject.ext.targetSdk
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
 
